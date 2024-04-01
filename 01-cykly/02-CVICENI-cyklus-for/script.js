@@ -5,22 +5,22 @@ Cvičení 1: Řady čísel
 Použijte cyklus `for` a vypište do konzole postupně řady čísel (nový cyklus pro každou řadu, ne vše v jednom 🙂)*/
 
 //- řada čísel od 1 do 10
-for (i = 1; i <= 10; i++){
+for (let i = 1; i <= 10; i++){
 	console.log(i);
 }
 
 //- řada čísel od 13 do 21
-for (i = 13; i <= 21; i++){
+for ( let i = 13; i <= 21; i++){
 	console.log(i);
 }
 
 //- sestupná řada čísel od 10 do 5
-for (i = 10; i >= 5; i--){
+for ( let i = 10; i >= 5; i--){
 	console.log();
 }
 
 //- řada sudých čísel od 0 do 30 (tj. 0, 2, 4, 6 …)
-for (i = 0; i <= 30; i+=2){
+for ( let i = 0; i <= 30; i+=2){
 	console.log(i);
 }
 
@@ -30,7 +30,7 @@ Napište cyklus `for`, který projde čísla od 1 do 100 a spočítá jejich sou
 Výsledek vypíše do konzole nebo do stránky.
 */
 let soucet = 0;
-for (i = 1; i <= 100; i++){
+for ( let i = 1; i <= 100; i++){
 	soucet += i;
 }
 console.log(soucet);
@@ -72,6 +72,22 @@ Ve funkci použijte cyklus `for` a postupně vynásobte čísla 1 až `n`. Výsl
 - Matematika je divná. Faktoriál nuly je `1`. Dopište do funkce speciální podmínku, která vrátí hodnotu 1, když je `n` nula.
 */
 
+function factorial(n) {
+	if (n === 0) {
+		return 1;
+	}
+	let result = 1; 
+	for (let i = 1; i <= n; i++){
+		result *= i;
+
+	}
+	return result
+}
+
+console.log(factorial(3));
+console.log(factorial(7));
+console.log(factorial(0));
+
 
 
 
@@ -85,11 +101,11 @@ Použijte cyklus `for` a vypište postupně všechny barvy do konzole. U modré 
 const barvy = ['červená', 'zelená', 'modrá', 'oranžová', 'fialová'];
 
 for (let i = 0; i < barvy.length; i++){
-	console.log(`${jmena[i]}`);
+	console.log(`${barvy[i]}`);
 
 }
 if (barvy[2] == 'modrá'){
-	console.log(`${jmena[i]} je nejkrásnější barva`)
+	console.log(`${barvy[2]} je nejkrásnější barva`)
 
 }
 /*
@@ -133,4 +149,21 @@ const kvetiny = [
 	'Kosatec',
 	'Levandule'
 ];
+
+let nejkratsiIndex = 0;
+let nejdelsiIndex = 0;
+
+for (let i = 1; i < kvetiny.length; i++){
+	if (kvetiny[1].length < kvetiny[nejkratsiIndex].length) {
+		nejkratsiIndex = i;
+	} else if (kvetiny[1].length > kvetiny[nejdelsiIndex].length) {
+		nejdelsiIndex = i;
+	}
+}
+
+console.log(kvetiny[nejkratsiIndex] + ', délka:' + kvetiny[nejkratsiIndex].length + ', index: ' + nejkratsiIndex);
+console.log(kvetiny[nejdelsiIndex] + ', délka:' + kvetiny[nejdelsiIndex].length + ', index:' + nejdelsiIndex);
+
+
+
 
