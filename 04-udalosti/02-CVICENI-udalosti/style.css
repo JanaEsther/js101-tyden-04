@@ -1,0 +1,126 @@
+html { box-sizing: border-box; }
+*, *::after, *::before { box-sizing: inherit; }
+
+body {
+	font: 18px/1.5 sans-serif;
+}
+
+section {
+	margin: 2rem 0;
+	padding: 2rem;
+	background: #e5e5e5;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+
+.pocitadlo {
+	display: flex;
+	gap: 1em;
+}
+
+#pocet {
+	font-size: 28px;
+	font-weight: bold;
+	color: red;
+}
+
+button {
+	font-size: 18px;
+	padding: 0.5em 1em;
+}
+
+#doba {
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 1rem;
+	width: 200px;
+	background-image: linear-gradient(to top right, #0a73a3, navy);
+	cursor: pointer;
+	transition: background-image 0.5s;
+}
+
+.icon {
+	filter: drop-shadow(0 0 10px rgb(0, 255, 255, 1));
+	transition: filter 0.5s;
+}
+
+.icon::before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #d5f5f5;
+	border-radius: 50%;
+	clip-path: path('M16.65,19.71c0-7.99,3.76-15.1,9.59-19.68C25.83,0.01,25.42,0,25,0C11.19,0,0,11.19,0,25s11.19,25,25,25c5.81,0,11.16-1.99,15.41-5.32C27.18,44.03,16.65,33.1,16.65,19.71z');
+}
+
+#doba::after {
+	content: 'Noc';
+	font-size: 28px;
+	color: #d5f5f5;
+	transition: color 0.5s;
+}
+
+#doba.den {
+	background-image: linear-gradient(to top right, #81f7de, #48def8);
+}
+
+.den .icon {
+	filter: drop-shadow(0 0 10px rgb(255, 255, 0, 1));
+}
+.den .icon::before {
+	background-color: orange;
+	border-radius: 50%;
+	clip-path: none;
+}
+
+#doba.den::after {
+	content: 'Den';
+	color: black;
+}
+
+
+.semafor {
+	display: flex;
+	gap: 10px;
+}
+
+.semafor div {
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#cervena {
+	background: #a00000;
+}
+
+#cervena.aktivni {
+	background: red;
+	box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+}
+
+#oranzova {
+	background: rgb(200, 130, 0);
+}
+
+#oranzova.aktivni {
+	background: orange;
+	box-shadow: 0 0 10px 5px rgba(255, 1650, 0, 0.5);
+}
+
+#zelena {
+	background: #009900;
+}
+
+#zelena.aktivni {
+	background: #00dc00;
+	box-shadow: 0 0 10px 5px rgba(0, 220, 0, 0.5);
+}

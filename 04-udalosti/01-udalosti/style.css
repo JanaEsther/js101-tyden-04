@@ -1,0 +1,31 @@
+html { box-sizing: border-box; }
+*, *::after, *::before { box-sizing: inherit; }
+
+body {
+	font: 18px/1.5 sans-serif;
+}
+
+button {
+	font-size: 18px;
+	padding: 0.5em 1em;
+}
+
+.box {
+	margin: 1rem 0;
+	padding: 1em;
+	background-color: #e5e5e5;
+}
+
+.foto {
+	width: 200px;
+}
+
+.vtip {
+	background-color: lightblue;
+	padding: 1em;
+}
+
+.aktivni {
+	background-color: yellow;
+	border: 5px solid red;
+}

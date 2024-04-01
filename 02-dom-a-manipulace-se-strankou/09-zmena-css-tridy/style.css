@@ -1,0 +1,34 @@
+html { box-sizing: border-box; }
+*, *::after, *::before { box-sizing: inherit; }
+
+body {
+	font: 18px/1.5 sans-serif;
+}
+
+section {
+	background-color: #e5e5e5;
+	padding: 1em;
+}
+
+img {
+	width: 200px;
+}
+
+.prvni {
+	font-size: 30px;
+}
+
+.druha {
+	font-weight: bold;
+}
+
+.treti {
+	font-family: cursive;
+}
+
+.zvyrazneni {
+	background-color: yellow;
+	color: blue;
+	padding: 30px;
+}
+

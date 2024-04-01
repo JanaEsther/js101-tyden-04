@@ -1,0 +1,18 @@
+html { box-sizing: border-box; }
+*, *::after, *::before { box-sizing: inherit; }
+
+body {
+	font: 18px/1.5 sans-serif;
+	max-width: 60rem;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+section {
+	background-color: #f0f0f0;
+	padding: 1rem 2rem;
+}
+
+img {
+	width: 100%;
+}

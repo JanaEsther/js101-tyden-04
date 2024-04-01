@@ -1,0 +1,29 @@
+html { box-sizing: border-box; }
+*, *::after, *::before { box-sizing: inherit; }
+
+body {
+	font: 18px/1.5 sans-serif;
+}
+
+button {
+	font-size: 18px;
+	padding: 0.5em 1em;
+}
+
+.box {
+	width: 300px;
+	height: 300px;
+	margin: 1rem 0;
+	padding: 1em;
+	background-color: #e5e5e5;
+}
+
+.napoveda {
+	position: absolute;
+	display: none;
+	padding: 0.5em 1em;
+	color: white;
+	background-color: tomato;
+	border-radius: 0 50px 50px 50px;
+	white-space: nowrap;
+}

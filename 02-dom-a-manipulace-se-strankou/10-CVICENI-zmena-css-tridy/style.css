@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+html { box-sizing: border-box; }
+*, *::after, *::before { box-sizing: inherit; }
+
+body {
+	font: 18px/1.5 "Bitter", serif;
+	font-optical-sizing: auto;
+	background-color: #e5e5e5;
+	padding: 2rem;
+}
+
+img {
+	width: 200px;
+}
+
+.perex {
+	font-size: 24px;
+	font-style: italic;
+	margin-block: 2rem;
+}
+
+section {
+	margin-block: 3rem;
+	padding: 2rem;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+
+.blogpost {
+	max-width: 60rem;
+	margin-inline: auto;
+	padding: 3rem;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+	margin-top: 0;
+	line-height: 1.2;
+}
+
+.main-title {
+	font-family: "Varela Round", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 56px;
+}
+
+.winter {
+	display: flex;
+	gap: 3rem;
+	background-color: #ddf1fd;
+}
+
+.summer {
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 3rem;
+	background-color: #ffefd2;
+}
+
+.winter img,
+.summer img {
+	object-fit: cover;
+}
+
+.list {
+	list-style: none;
+	counter-reset: items;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.list li {
+	margin: 0.5em 0;
+	padding: 0 0 0 2em;
+	position: relative;
+}
+
+.list li::before {
+	counter-increment: items;
+	content: counter(items);
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 50%;
+	line-height: 1.5em;
+	text-align: center;
+	background-color: gray;
+	color: white;
+}
+
+.winter .list li::before {
+	background-color: dodgerblue;
+}
+
+.summer .list li::before {
+	background-color: orange;
+}
+
+.tips {
+	background-color: #e5e5e5;
+}
+
+.crazy-tips {
+	background-image: linear-gradient(to top right, yellow, green);
+	outline: 10px dotted hotpink;
+	transform: rotate(5deg);
+	box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.3);
+}
+
+.conclusion {
+	background-color: #f8d2f8;
+}
+
+.crazy-conclusion {
+	background-image: linear-gradient(to top right, cyan, orange);
+	outline: 10px dashed lime;
+	transform: rotate(-5deg);
+	box-shadow: 10px 10px 20px rgba(238, 241, 3, 0.45);
+}

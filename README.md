@@ -1,1 +1,3 @@
-# js101-tyden04
+# Týden 4
+
+Podklady pro 4. týden kurzu JavaScript 101.
