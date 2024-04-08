@@ -40,6 +40,6 @@ console.log(sekce);
 // nemusíme hledat uvnitř celého dokumentu,
 // ale můžeme hledat uvnitř jiného prvku
 
-const odstavec5 = sekce.querySelector('p');
+const odstavec5 = sekce.querySelector('p♦');
 console.log(odstavec5);
 

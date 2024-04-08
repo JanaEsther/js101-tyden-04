@@ -8,4 +8,4 @@ obrazek.alt = 'Roztomilé štěňátko';
 
 const odkaz = document.querySelector('a');
 odkaz.href = 'https://www.seznam.cz';
-odkaz.title = 'Toto vede na Seznam';
+odkaz.title = 'Toto je odkaz na Seznam';

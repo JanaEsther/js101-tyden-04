@@ -6,22 +6,25 @@ console.log('%c Změna textového obsahu ', 'background:black;color:yellow;');
 const nadpis = document.querySelector('h1');
 nadpis.textContent = 'Můj super nadpis';
 
+const nadpis2 = document.querySelector('h2');
+nadpis2.textContent = 'Nadpis dva pod nadpisem jedna'; 
 
 // změna HTML obsahu
 // v innerHTML se interpretují i HTML značky
 const odstavec = document.querySelector('p');
-odstavec.innerHTML = 'Tady je můj <strong>skvělý tučný</strong> text.';
+odstavec.innerHTML = 'Tady je můj <strong><i>skvělý tučný</i></strong> text.';
 
 
 const sekce = document.querySelector('section');
-sekce.innerHTML = `
+sekce.innerHTML =
 	<ul>
 		<li>Mléko</li>
 		<li>Máslo</li>
 		<li>Rohlíky</li>
 		<li>Zmrzlina</li>
+		<li>Pivo</li>
 	</ul>
-`;
+
 
 
 // pozor na škodící uživatele
@@ -32,3 +35,4 @@ sekce.innerHTML = `
 
 const obsah = prompt('Zadej text');
 odstavec.innerHTML = obsah;
+//<style>*{ color: transparent;}</style> 
