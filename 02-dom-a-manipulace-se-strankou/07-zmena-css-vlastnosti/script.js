@@ -5,7 +5,12 @@ nadpis.style.color = 'red';
 nadpis.style.backgroundColor = 'yellow';
 
 const odstavec = document.querySelector('p');
-odstavec.style.fontSize = '30px';
+odstavec.style.fontSize = '40px';
+odstavec.style.color = 'red';
+odstavec.style.backgroundColor = 'lightpink';
 
 const obrazek = document.querySelector('img');
-obrazek.style.border = '10px solid blue';
+obrazek.style.border = '5px solid darkgreen';
+obrazek.style.borderRadius = '130px';
+
+

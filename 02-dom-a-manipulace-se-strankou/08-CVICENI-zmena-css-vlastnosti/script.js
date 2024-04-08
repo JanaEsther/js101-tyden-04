@@ -15,7 +15,10 @@ Vyberte pomocí `document.querySelector` hlavní nadpis a upravte jeho CSS vlast
 - Vypněte u nadpisu tučné písmo, tj. nastavte `font-weight` na hodnotu `normal`
 - Zapněte na nadpisu kurzívu, tj. `font-style` na hodnotu `italic`
 */
-
+const hlavniNadpis = document.querySelector('.title');
+hlavniNadpis.style.color = 'dodgerblue';
+hlavniNadpis.style.fontWeight = 'normal';
+hlavniNadpis.style.fontStyle = 'italic';
 
 
 /*
@@ -25,6 +28,8 @@ Odstavci hned pod nadpisem (perex) nastavte:
 - Padding na hodnotu `1em`
 - Ohraničení vlevo (border-left) na hodnotu `3px solid dodgerblue`
 */
+const odstavec = document.querySelector('.perex');
+odstavec.style.backgroundColor = '#e5e5e5';
 
 
 
