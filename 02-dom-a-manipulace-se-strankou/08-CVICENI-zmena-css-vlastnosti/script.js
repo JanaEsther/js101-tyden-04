@@ -30,7 +30,8 @@ Odstavci hned pod nadpisem (perex) nastavte:
 */
 const odstavec = document.querySelector('.perex');
 odstavec.style.backgroundColor = '#e5e5e5';
-
+odstavec.style.padding = `1em`;
+odstavec.style.borderLeft = '2px solid dodgerblue';
 
 
 /*
@@ -41,7 +42,16 @@ Oběma obrázkům nastavte:
 - Bílou barvu pozadí
 - Přidejte stín pomocí vlastnosti `box-shadow` s hodnotou `3px 3px 5px rgba(0, 0, 0, 0.15)`
 */
-
+const image1 = document.querySelector('.winter-img');
+image1.style.border = '2px solid dodgerblue';
+image1.style.padding = '20px';
+image1.style.backgroundColor = 'white';
+image1.style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.15)';
+const image2 = document.querySelector('.summer-img');
+image2.style.border = '2px solid gold';
+image2.style.padding = '20px';
+image2.style.backgroundColor = 'white';
+image2.style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.15)';
 
 
 
@@ -53,8 +63,19 @@ Na stránce jsou dva odkazy - jeden vede na léto, druhý na zimu.
 - Oběma odkazům nastavte barvu písma na bílou
 - Oběma odkazům vypněte podtržení, nastavte `text-decoration` na hodnotu `none`
 */
-
-
+const a1 = document.querySelector('#winter-link');
+a1.style.backgroundColor = 'tomato';
+a1.style.color = 'white';
+a1.style.textDecoration = 'none';
+a1.style.borderRadius = '7px';
+a1.style.padding = '3px';
+const a2 = document.querySelector('#summer-link');
+a2.style.backgroundColor = 'dodgerblue';
+a2.style.color = 'white';
+a1.style.color = 'white';
+a2.style.textDecoration = 'none';
+a2.style.borderRadius = '7px';
+a2.style.padding = '3px';
 
 
 /*
@@ -63,3 +84,7 @@ Pohrajte si s posledním nadpisem na stránce s textem “Závěr”:
 Otočte nadpis tak, aby nebyl úplně rovně.
 Nastavte vlastnost `transform` na hodnotu `rotate(-7deg)`
 */
+const endNadpis = document.querySelector('#conclusion');
+endNadpis.style.transform = 'rotate(-7deg)';
+endNadpis.style.color = 'orangered';
+endNadpis.style.marginBottom = '60px';
