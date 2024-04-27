@@ -6,7 +6,8 @@ body {
 }
 
 section {
-	background-color: #e5e5e5;
+	background-color:aliceblue;
+	color: skyblue;
 	padding: 1em;
 }
 
@@ -27,8 +28,8 @@ img {
 }
 
 .zvyrazneni {
-	background-color: yellow;
-	color: blue;
+	background-color: pink;
+	color: hotpink;
 	padding: 30px;
 }
 

@@ -32,6 +32,7 @@ const odstavec = document.querySelector('.perex');
 odstavec.style.backgroundColor = '#e5e5e5';
 odstavec.style.padding = `1em`;
 odstavec.style.borderLeft = '2px solid dodgerblue';
+odstavec.style.borderRight = '2px solid orange';
 
 
 /*
@@ -48,7 +49,7 @@ image1.style.padding = '20px';
 image1.style.backgroundColor = 'white';
 image1.style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.15)';
 const image2 = document.querySelector('.summer-img');
-image2.style.border = '2px solid gold';
+image2.style.border = '2px solid orange';
 image2.style.padding = '20px';
 image2.style.backgroundColor = 'white';
 image2.style.boxShadow = '3px 3px 5px rgba(0, 0, 0, 0.15)';
@@ -86,5 +87,6 @@ Nastavte vlastnost `transform` na hodnotu `rotate(-7deg)`
 */
 const endNadpis = document.querySelector('#conclusion');
 endNadpis.style.transform = 'rotate(-7deg)';
-endNadpis.style.color = 'orangered';
+endNadpis.style.color = 'orange';
 endNadpis.style.marginBottom = '60px';
+endNadpis.style.backgroundColor = 'flowerwhite';

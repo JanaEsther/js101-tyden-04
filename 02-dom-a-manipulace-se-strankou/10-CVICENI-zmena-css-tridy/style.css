@@ -18,6 +18,7 @@ img {
 	font-size: 24px;
 	font-style: italic;
 	margin-block: 2rem;
+	color:darkslateblue;
 }
 
 section {
@@ -42,6 +43,7 @@ section h2 {
 .title {
 	margin-top: 0;
 	line-height: 1.2;
+	color:indigo;
 }
 
 .main-title {
@@ -54,14 +56,15 @@ section h2 {
 .winter {
 	display: flex;
 	gap: 3rem;
-	background-color: #ddf1fd;
+	background-color:rgb(193, 216, 224);
 }
 
 .summer {
 	display: flex;
 	flex-direction: row-reverse;
 	gap: 3rem;
-	background-color: #ffefd2;
+	background-color: rgb(226, 215, 151);
+
 }
 
 .winter img,
@@ -111,7 +114,7 @@ section h2 {
 
 .crazy-tips {
 	background-image: linear-gradient(to top right, yellow, green);
-	outline: 10px dotted hotpink;
+	outline: 10px dotted yellow;
 	transform: rotate(5deg);
 	box-shadow: 10px 10px 20px rgba(255, 0, 0, 0.3);
 }
@@ -126,3 +129,4 @@ section h2 {
 	transform: rotate(-5deg);
 	box-shadow: 10px 10px 20px rgba(238, 241, 3, 0.45);
 }
+

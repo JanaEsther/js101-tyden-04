@@ -26,3 +26,4 @@ odstavec.classList.remove('prvni');
 // - pokud na prvku neexistuje, tak ji přidá
 // - pokud na prvku existuje, tak ji odebere
 odstavec.classList.toggle('zvyrazneni');
+document.querySelector('p').classList.toggle('zvyrazneni')

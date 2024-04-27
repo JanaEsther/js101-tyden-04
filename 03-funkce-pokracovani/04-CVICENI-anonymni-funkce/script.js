@@ -11,19 +11,29 @@ Přepište všechny funkce do podoby *arrow function* a snažte se vždy použí
 Po přepsání vyzkoušejte, zda všechny funkce správně fungují.
 */
 
-function soucet(a, b) {
+/*function soucet(a, b) {
   return a + b;
-}
+}*/
 
-function naVelkaPismena(text) {
+const soucet = (a, b) => a + b; 
+
+
+/*function naVelkaPismena(text) {
   return text.toUpperCase();
-}
+}*/
 
-function predstavSe(jmeno, vek) {
-  console.log(`Ahoj, jmenuji se ${jmeno} a je mi ${vek} let.`);
-}
+const naVelkaPismena = (text) => text.toUpperCase();
+console.log(naVelkaPismena("velikonoce"));
 
-function hodnoceni(body) {
+
+/*function predstavSe(jmeno, vek) {
+  console.log(`Ahoj, jmenuji se ${jmeno} a je mi ${vek} let.`);*/
+
+
+const predstavSe = (jmeno, vek) => `Ahoj, jmenuji se ${jmeno} a je mi ${vek} let.`;
+console.log(predstavSe("Jana", 50))
+
+/*function hodnoceni(body) {
   if (body >= 90) {
     return 'A'
   } else if (body >= 80) {
@@ -37,14 +47,40 @@ function hodnoceni(body) {
   } else {
     return 'F'
   }
+}*/
+
+const hodnoceni = (body) => {
+  if (body >= 90) {
+    return 'A';
+  } else if (body >= 80) {
+    return 'B';
+  } else if (body >= 70) {
+    return 'C';
+  } else if (body >= 60) {
+    return 'D';
+  } else if (body >= 50) {
+    return 'E';
+  } else {
+    return 'F';
+  }
 }
 
-function cas(vteriny) {
+
+/*function cas(vteriny) {
   const h = Math.floor(vteriny / 3600);
   const m = Math.floor((vteriny % 3600) / 60);
   const s = vteriny - (h * 3600) - (m * 60);
   return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`
-}
+}*/
+
+const cas = (vteriny) => {
+  const h = Math.floor(vteriny / 3600);
+  const m = Math.floor((vteriny % 3600) / 60);
+  const s = vteriny - (h * 3600) - (m * 60);
+  return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`
+} 
+
+
 
 // pouziti funkci
 console.log( soucet(2, 5) );  // 7
@@ -58,8 +94,8 @@ console.log( cas(4723) ); // 01:18:43
 
 /*
 Cvičení 2: Anonymní funkce
-Máte připravený následující kód, který možná poznáváte z předchozích cvičení. Na označené místo dopište anonymní funkci, která bude přijímat jeden číselný parametr a jako výsledek vrátí jeho trojnásobek.
-
+Máte připravený následující kód, který možná poznáváte z předchozích cvičení. 
+Na označené místo dopište anonymní funkci, která bude přijímat jeden číselný parametr a jako výsledek vrátí jeho trojnásobek.
 Funkci zapište jako **anonymní** přímo do volání funkce `kalkulacka`, **nevytvářejte** novou pojmenovanou funkci `trojnasobek`.
 */
 
@@ -67,11 +103,15 @@ function dvojnasobek(x) {
   return x * 2;
 }
 
+function trojnasobek(x) {
+  return x * 3;
+}
+
 function kalkulacka(cislo, fn) {
-  console.log( fn(cislo) );
+  console.log(fn(cislo));
 }
 
 // volani funkce
 kalkulacka(2, dvojnasobek);
-kalkulacka(2, /* ZDE MISTO KOMENTARE NAPIS ANONYMNI FUNKCI PRO TROJNASOBEK */)
+kalkulacka(2, trojnasobek);
 

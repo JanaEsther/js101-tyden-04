@@ -13,7 +13,8 @@ button {
 .box {
 	margin: 1rem 0;
 	padding: 1em;
-	background-color: #e5e5e5;
+	background-color:pink;
+	color:deeppink;
 }
 
 .foto {
@@ -21,7 +22,8 @@ button {
 }
 
 .vtip {
-	background-color: lightblue;
+	background-color:deeppink;
+	color:floralwhite;
 	padding: 1em;
 }
 

@@ -20,9 +20,36 @@ console.log(vysledek); // 8
 
 Vyzkoušejte použití funkce kalkulacka se všemi čtyřmi matematickými operacemi.
 */
+const soucet = (a, b) => {
+  return  a + b ;
+}
+  
+const rozdil = (a, b) => {
+  return  a - b;
+}
+const nasobek= (a, b) => {
+  return a * b;
+}
 
+const deleni = (a, b) => {
+  return a/b;
+}
 
+const kalkulacka =(x, y, fn)=>{
+  return fn(x,y);
+}
 
+let vysledek = kalkulacka(3, 5, soucet);
+console.log(vysledek);
+
+vysledek = kalkulacka(5,3,rozdil);
+console.log(vysledek);
+
+vysledek = kalkulacka(5,3,nasobek);
+console.log(vysledek);
+
+vysledek = kalkulacka(6,3, deleni);
+console.log(vysledek);
 
 /*
 Cvičení 2: Testování pole hodnot
@@ -48,15 +75,38 @@ Výsledek v konzoli:
 64 false
 */
 
+
 const cisla = [2, 7, 13, 28, 37, 64];
 
 function jeLiche(cislo) {
   return cislo % 2 === 1
 }
 
+function testPole(cisla, fn) {
+  return fn(cisla)
+}
 
+for(let i = 0; i < cisla.length; i++) {
+  console.log();
+  console.log(cisla[i] +" "+ testPole(cisla[i], jeLiche));
+}
 
-/*
-BONUS:
-Zkuste vytvořit jinou funkci podobnou existující funkci `jeLiche` , která bude například testovat, zda je číslo větší než 20. Zkuste tuto funkci předat jako argument do funkce `testPole`.
+/* BONUS:
+Zkuste vytvořit jinou funkci podobnou existující funkci `jeLiche` , která bude například testovat, zda je číslo větší než 20. 
+Zkuste tuto funkci předat jako argument do funkce `testPole`.
 */
+
+const seznam = [20, 70, 130, 12, 370, 64, 15, 200, 21, 360];
+
+function jeVetsiNezDvacet(cislo) {
+  return cislo > 20
+}
+
+function testPole(seznam, fn) {
+  return fn(seznam)
+}
+
+for(let i = 0; i < seznam.length; i++) {
+  
+  console.log(seznam[i] +" "+ testPole(seznam[i], jeVetsiNezDvacet));
+}

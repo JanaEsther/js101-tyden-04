@@ -3,7 +3,7 @@ console.log('%c Události ', 'background:black;color:yellow;');
 // event handler
 const priKliknuti = () => {
 	const text = document.querySelector('.text');
-	text.style.color = 'red';
+	text.style.color = 'orangered';
 	text.style.fontFamily = 'cursive';
 }
 

@@ -1,14 +1,11 @@
 console.log('%c Anonymní funkce ', 'background:black;color:yellow;');
 
 
-// const double = (x) => {
-//   console.log( 2 * x );
-// }
-
-// const cislo = 5;
-
-// double(cislo);
-// double(5);
+const double = (x) => {
+  console.log( 2 * x );
+}
+ const cislo = 5;
+ double(cislo); double(5);
 
 
 
