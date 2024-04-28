@@ -107,6 +107,10 @@ function trojnasobek(x) {
   return x * 3;
 }
 
+function ctyrnasobek(x) {
+  return x * 4;
+}
+
 function kalkulacka(cislo, fn) {
   console.log(fn(cislo));
 }
@@ -114,4 +118,5 @@ function kalkulacka(cislo, fn) {
 // volani funkce
 kalkulacka(2, dvojnasobek);
 kalkulacka(2, trojnasobek);
+kalkulacka(2, ctyrnasobek);
 

@@ -3,7 +3,7 @@ console.log('%c Události ', 'background:black;color:yellow;');
 // event handler
 const priKliknuti = () => {
 	const text = document.querySelector('.text');
-	text.style.color = 'orangered';
+	text.style.color = 'IndianRed';
 	text.style.fontFamily = 'cursive';
 }
 
@@ -51,3 +51,11 @@ foto.addEventListener('mouseover', () => {
 foto.addEventListener('mouseout', () => {
 	foto.src = 'images/kocka.jpg';
 });
+
+let num = 4;
+if(num > 5){
+  console.log("Bigger than 5");
+  if(num<7){
+      console.log("Smaller than 7");
+  }
+}

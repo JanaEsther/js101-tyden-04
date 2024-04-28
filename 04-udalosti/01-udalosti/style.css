@@ -13,8 +13,9 @@ button {
 .box {
 	margin: 1rem 0;
 	padding: 1em;
-	background-color:pink;
+	background-color:floralwhite;
 	color:deeppink;
+	border: 5px solid hotpink;
 }
 
 .foto {
@@ -24,10 +25,13 @@ button {
 .vtip {
 	background-color:deeppink;
 	color:floralwhite;
+	border: 5px solid hotpink;
 	padding: 1em;
 }
 
 .aktivni {
-	background-color: yellow;
-	border: 5px solid red;
+	background-color: deeppink;
+	color:floralwhite;
+	font-weight:700;
+	border: 5px solid hotpink;
 }
